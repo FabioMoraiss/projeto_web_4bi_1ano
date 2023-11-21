@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    font-family: 'JetBrains Mono', monospace;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+body{
+    background-color: #18181b;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    max-width: 600px;
+    margin-bottom: 24px;
+}
+
+.container_input{
+    max-width: 480px;
+    margin: 14px 0;
+}
+
+.container_input span{
+    color:#ffffff;
+    font-size: 24px;
+}
+
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #dfdfdf;
+    height: 18px;
+    outline: none;
+    margin-top: 8px;
+}
+
+.botao_acao{
+    height: 40px;
+    background-color: #3eb72b;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.container_senha{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.titulo{
+    text-align: center;
+    color: #ffffff;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.senha{
+    height: 60px;
+    background-color: rgba(0,0,0, 0.40);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border: 1px solid #313131;
+    transition: transform 0.5s;
+}
+
+.senha:hover{
+    transform: scale(1.05);
+}
+
+.dica{
+    color: #ffffff;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background:  rgb(15,15,15);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.esconder{
+    display: none;
+}
+
+.container_senha:hover .dica{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
