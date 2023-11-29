@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-*{
+.all{
     font-family: 'JetBrains Mono', monospace;
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
 }
-body{
+
+.body_original{
     background-color: #18181b;
     width: 100%;
     height: 100vh;
@@ -43,6 +44,7 @@ body{
 
 .botao_acao{
     height: 40px;
+    width: 450px;
     background-color: #3eb72b;
     border: 0;
     border-radius: 4px;
@@ -52,6 +54,8 @@ body{
     font-weight: bold;
     font-size: 18px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container_senha{
@@ -72,6 +76,7 @@ body{
 }
 
 .senha{
+    width: 500px;
     height: 60px;
     background-color: rgba(0,0,0, 0.40);
     border-radius: 4px;

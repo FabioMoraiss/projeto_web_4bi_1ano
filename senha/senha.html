@@ -4,34 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gerador de senhas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img class="logo" src="../imagens/SENHA.png" alt="logo do site">
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"> <img src="/imagens/RARINALDO_2.png" alt=""> </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" style="color: #0cff00" href="../index.html">Menu Principal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="color: #0cff00" href="../cpf/cpf.html">CPF</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="all">
+        <div class="body_original">
+            <img class="logo" src="../imagens/SENHA.png" alt="logo do site">
 
 
-    <form id="container_input" class="container_input">
-        <span> tamanho <span id="valor"></span> caracteres </span>
-        <input id="slider" class="slider" type="range" min="5" max="50" value="15">
-        <input id="botao" class="botao_acao" value="gerar senha" type="submit">
-    </form>
-
-    <div id="container_senha" onclick="copiarSenha()" class="container_senha esconder">
-        <span class="titulo"> sua senha gerada foi:</span>
-        <span id="senha" class="senha"></span>
-        <span class="dica">Clique na senha para copiar👆</span>
+            <form id="container_input" class="container_input">
+                <span> tamanho <span id="valor"></span> caracteres </span>
+                <input id="slider" class="slider" type="range" min="5" max="50" value="15">
+                <div class="botao">
+                  <input id="botao" class="botao_acao" value="gerar senha" type="submit">
+                </div>
+                
+            </form>
         
+            <div id="container_senha" onclick="copiarSenha()" class="container_senha esconder">
+                <span class="titulo"> sua senha gerada foi:</span>
+                <span id="senha" class="senha"></span>
+                <span class="dica">Clique na senha para copiar👆</span>
+                
+            </div>
+        </div>
     </div>
-
-    <div id="senhas_geradas" class="senhas_geradas">
-        <span class="titulo2">senhas já geradas:</span>
-        <span></span>
-
-    </div>
+   
     <span><a href="../index.html">Voltar para pagina Principal</a></span>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src ="script.js"></script>
     
 </body>
