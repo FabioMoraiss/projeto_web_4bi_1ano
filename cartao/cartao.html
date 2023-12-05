@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPF</title>
+    <title>Gerador de Cartao</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -22,36 +22,33 @@
                 <a class="nav-link active" style="color: #0cff00" href="../senha/senha.html">Senha</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" style="color: #0cff00" href="../cartao/cartao.html">Cartão</a>
+                <a class="nav-link active" style="color: #0cff00" href="../cpf/cpf.html">CPF</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
 
-    
-
     <div class="all">
        
         <div class="body_original">
-            <img class="logo" src="../imagens/CPF.png" alt="logo do site">
+            <img class="logo" src="../imagens/cartao.png" alt="logo do site">
     
     
             <form id="container_input" class="container_input">
-                <input id="botao" class="botao_acao" value="gerar CPF" type="submit">
+                <input id="botao" class="botao_acao" value="gerar cartão" type="submit">
             </form>
         
-            <div id="container_cpf" onclick="copiarCPF()"class="container_cpf esconder">
-                <span class="titulo"> seu cpf gerado foi:</span>
-                <span id="cpf" class="cpf"></span>
-                <span class="dica">Clique no cpf para copiar</span>
+            <div id="container_cartao" onclick="copiarCartao()"class="container_cartao esconder">
+                <span class="titulo"> seu cartão gerado foi:</span>
+                <span id="cartao" class="cartao"></span>
+                <span class="dica">Clique no catão para copiar</span>
             </div>
             
         
     
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src ="script.js"></script>
 </body>

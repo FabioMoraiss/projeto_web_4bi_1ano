@@ -93,6 +93,6 @@ function gerarSegundoDigitoVerificador(cpf) {
 
 function copiarCPF() {
     navigator.clipboard.writeText(cpfCopiar);
-    alert("senha copiada com sucesso")
+    alert("CPF copiado com sucesso")
     
 }
