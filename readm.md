@@ -1,13 +1,3 @@
-# oque fazer ?
+# TRABALHO PRONTO
 
->adicionar o sinbolo de copiar nos locais adqueados
-
-terminar o gerador de cpf
-
-
-terminar o gerador de telefone
-
-fazer o site principal para ser o hub
-
-
-#### lembrete: o copiar nao funcina o opera, nao sei porque
+>LINK https://projeto-web-4bi-1ano.vercel.app
